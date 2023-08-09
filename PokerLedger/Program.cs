@@ -12,7 +12,7 @@ builder.Services.AddCors(options =>
             builder
             .AllowAnyMethod()
             .AllowAnyHeader()
-            .WithOrigins("http://localhost:5174");
+            .WithOrigins("http://localhost:5174", "https://ambitious-forest-0e1870710.3.azurestaticapps.net");
         });
 });
 

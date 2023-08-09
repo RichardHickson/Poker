@@ -8,7 +8,9 @@ function LoginForm({ onLoginSuccess }: any) {
   const handleSubmit = async (e: any) => {
     e.preventDefault();
 
-    const url = "https://localhost:7157/get-user?username=" + username;
+    const url =
+      "https://pokerledger-server.azurewebsites.net/get-user?username=" +
+      username;
 
     try {
       const response = await fetch(url, {

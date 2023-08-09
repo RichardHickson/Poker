@@ -137,7 +137,7 @@ function PokerLedger() {
       gameInfo: JSON.stringify(players),
     };
 
-    const url = "https://localhost:7157/create-game";
+    const url = "https://pokerledger-server.azurewebsites.net/create-game";
 
     fetch(url, {
       method: "POST",

@@ -1729,11 +1729,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/richardhickson/Projects/PokerLedger/PokerLedger/PokerLedger.csproj",
+      "projectUniqueName": "/Users/richardhickson/Projects/PokerLedger1/PokerLedger/PokerLedger.csproj",
       "projectName": "PokerLedger",
-      "projectPath": "/Users/richardhickson/Projects/PokerLedger/PokerLedger/PokerLedger.csproj",
+      "projectPath": "/Users/richardhickson/Projects/PokerLedger1/PokerLedger/PokerLedger.csproj",
       "packagesPath": "/Users/richardhickson/.nuget/packages/",
-      "outputPath": "/Users/richardhickson/Projects/PokerLedger/PokerLedger/obj/",
+      "outputPath": "/Users/richardhickson/Projects/PokerLedger1/PokerLedger/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/richardhickson/.nuget/NuGet/NuGet.Config"

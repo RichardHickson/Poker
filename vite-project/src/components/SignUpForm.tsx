@@ -13,7 +13,7 @@ function SignUpForm() {
       password: password,
     };
 
-    const url = "https://localhost:7157/create-user";
+    const url = "https://pokerledger-server.azurewebsites.net/create-user";
 
     fetch(url, {
       method: "POST",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eqpZc8hk7tfn+E2yG7j5WaJEMYDcl9Xr0ba+lXAvrcF7eSrXUGtWgR2GT/kRhvSQHnxF4bM7o98oWsvXaBGcyg==",
+  "dgSpecHash": "V90Tj3tzS3a58zyfZ9YKCPNapj7hQL7r6nVHl4rQZC9xXYdAye6m3Gvml7aOmE5nBWIIxHaP+6SXn66wdL3S4g==",
   "success": true,
-  "projectFilePath": "/Users/richardhickson/Projects/PokerLedger/PokerLedger/PokerLedger.csproj",
+  "projectFilePath": "/Users/richardhickson/Projects/PokerLedger1/PokerLedger/PokerLedger.csproj",
   "expectedPackageFiles": [
     "/Users/richardhickson/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/richardhickson/.nuget/packages/microsoft.aspnetcore.openapi/7.0.9/microsoft.aspnetcore.openapi.7.0.9.nupkg.sha512",

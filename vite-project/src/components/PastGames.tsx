@@ -11,7 +11,7 @@ const PastGames = () => {
   }, []);
 
   function getGames() {
-    const url = "https://localhost:7157/get-all-games";
+    const url = "https://pokerledger-server.azurewebsites.net/get-all-games";
 
     fetch(url, { method: "GET" })
       .then((response) => response.json())
