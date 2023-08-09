@@ -146,3 +146,5 @@
 /Users/richardhickson/Projects/PokerLedger1/PokerLedger/obj/Debug/net7.0/PokerLedger.pdb
 /Users/richardhickson/Projects/PokerLedger1/PokerLedger/obj/Debug/net7.0/PokerLedger.genruntimeconfig.cache
 /Users/richardhickson/Projects/PokerLedger1/PokerLedger/obj/Debug/net7.0/ref/PokerLedger.dll
+/Users/richardhickson/Projects/PokerLedger1/PokerLedger/bin/Debug/net7.0/Data/GameDB.db
+/Users/richardhickson/Projects/PokerLedger1/PokerLedger/bin/Debug/net7.0/Data/UserDB.db

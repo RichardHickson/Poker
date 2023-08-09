@@ -81,7 +81,13 @@ const PastGames = () => {
                             <tr key={index}>
                               <td>{player.name}</td>
                               <td>{player.finalChips}</td>
-                              <td>{player.profit}</td>
+                              <td
+                                style={{
+                                  color: player.profit < 0 ? "red" : "green",
+                                }}
+                              >
+                                {player.profit}
+                              </td>
                             </tr>
                           ))}
                       </tbody>

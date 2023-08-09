@@ -42,6 +42,11 @@ app.MapGet("/get-all-games", async () => await GamesRepository.GetGames())
 app.MapPost("/create-game", async (Game gameToCreate) =>await GamesRepository.CreateGame(gameToCreate))
     .WithTags("Games Endpoints");
 
+app.MapDelete("/delete-post-by-id/{postId}", async (int gameId) =>
+{
+    await GamesRepository.DeleteGame(gameId);
+}).WithTags("Games Endpoints");
+
 app.MapGet("/get-all-users", async () => await UserRepository.GetUsers())
     .WithTags("Users Endpoints");
 

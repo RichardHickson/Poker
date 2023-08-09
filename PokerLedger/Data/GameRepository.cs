@@ -30,6 +30,34 @@ namespace PokerLedger.Data
                 }
             }
         }
+
+        internal async static Task<Game> GetGameById(int gameId)
+        {
+            using (var db = new GameDBContext())
+            {
+                return await db.Games
+                    .FirstOrDefaultAsync(game => game.GameID == gameId);
+            }
+        }
+
+        internal async static Task<bool> DeleteGame(int gameId)
+        {
+            using (var db = new GameDBContext())
+            {
+                try
+                {
+                    Game gameToDelete = await GetGameById(gameId);
+
+                    db.Remove(gameToDelete);
+
+                    return await db.SaveChangesAsync() >= 1;
+                }
+                catch (Exception e)
+                {
+                    return false;
+                }
+            }
+        }
     }
 }
 
