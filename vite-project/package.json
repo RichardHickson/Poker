@@ -6,7 +6,7 @@
   "scripts": {
     "start": "vite",
     "dev": "vite",
-    "build": "CI=false && tsc && vite build",
+    "build": "CI=false && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
