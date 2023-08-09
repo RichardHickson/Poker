@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "3RwLT1gVfLHWLpzhKm5rkDBzzd4DJfEHZ8ADnS9g2Os=",
+  "Source": "PokerLedger",
+  "BasePath": "_content/PokerLedger",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
