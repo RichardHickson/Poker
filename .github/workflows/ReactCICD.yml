@@ -1,9 +1,12 @@
-name: Azure Static Web Apps CI/CD
+name: ReactCICD
 
 on:
   push:
     branches:
       - master
+    paths:
+      - "vite-project/**"
+      - ".github/workflows/**"
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
