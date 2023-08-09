@@ -28,6 +28,7 @@ function PokerLedger() {
     [key: number]: number;
   }>({});
   const [finalEnter, setFinalEnter] = useState(false);
+  const [isGameSaved, setIsGameSaved] = useState(false);
 
   const handleChipCountChange = (e: ChangeEvent<HTMLInputElement>) => {
     setChipCount(e.target.value);
@@ -148,6 +149,7 @@ function PokerLedger() {
     })
       .then((response) => response.json())
       .then((responseFromServer) => {
+        setIsGameSaved(true);
         console.log(responseFromServer);
       })
       .catch((error) => {
@@ -508,23 +510,33 @@ function PokerLedger() {
           )}
         </div>
         {isDone && (
-          <div className="row mt-3">
-            <div className="col-md-6">
-              <div className="input-group">
-                <span className="input-group-text">Game Title</span>
-                <input
-                  onChange={handleTitleChange}
-                  value={title}
-                  placeholder="Poker Game #1"
-                  type="text"
-                  className="form-control"
-                  aria-label="Game Title"
-                />
+          <div>
+            {isGameSaved && (
+              <div className="alert alert-success mt-3" role="alert">
+                Game has been saved successfully.
               </div>
-            </div>
-            <div className="col-md-6">
-              <Button onClick={handleSendToServer}>Save Game</Button>
-            </div>
+            )}
+
+            {!isGameSaved && (
+              <div className="row mt-3">
+                <div className="col-md-6">
+                  <div className="input-group">
+                    <span className="input-group-text">Game Title</span>
+                    <input
+                      onChange={handleTitleChange}
+                      value={title}
+                      placeholder="Poker Game #1"
+                      type="text"
+                      className="form-control"
+                      aria-label="Game Title"
+                    />
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <Button onClick={handleSendToServer}>Save Game</Button>
+                </div>
+              </div>
+            )}
           </div>
         )}
       </div>
